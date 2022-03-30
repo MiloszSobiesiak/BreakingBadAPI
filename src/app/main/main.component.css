@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+h1{
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 6rem;
+    position: relative;
+    top:10%;
+    left:3%;
+}
+h2{
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.6rem;
+    position: relative;
+    top:12%;
+    left:3%;
+}
+.main{
+    position:relative;
+    background-image: url('/assets/bgXD4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+
+    /* mask-image: linear-gradient(to bottom, black 1%, black 99%); */
+}
+p{
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+    word-wrap: break-word;
+    position: relative;
+    top:25%;
+    left:3%;
+
+}

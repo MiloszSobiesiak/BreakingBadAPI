@@ -1,0 +1,7 @@
+<input class="input" type="text" [(ngModel)]="text" placeholder="Search..."/>
+<div class="grid">
+    <app-character-cover
+      *ngFor="let character of characters | async | filter:text"
+      [character]="character"
+    ></app-character-cover>
+  </div>

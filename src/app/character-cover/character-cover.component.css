@@ -1,0 +1,28 @@
+img{
+    width: 260px;
+    height: 350px;
+    transition: transform .5s ease;
+    
+}
+.text{
+    font-size: 1.5rem;
+    position: absolute;
+    top:80%;
+    left: 5%;
+    color: white;
+    opacity: 0; 
+}
+.box{
+    border-radius: 10%;
+    margin:25px;
+    position: relative;
+    overflow: hidden;
+}
+
+.box:hover .text{
+opacity:1;
+}
+
+.box:hover img{
+    transform: scale(1.2);
+}

@@ -1,0 +1,37 @@
+<div class="main">
+<p>BREAKING BAD</p>
+<div class="posters">
+<a href="/seasons#table" (click)="click('1', 'Breaking Bad')"><img src="/assets/season1.webp"/> <p> Season 1</p></a>
+<a href="/seasons#table" (click)="click('2', 'Breaking Bad')"><img src="/assets/season2.webp"/> <p> Season 2</p></a>
+<a href="/seasons#table" (click)="click('3', 'Breaking Bad')"><img src="/assets/season 3.webp"/><p> Season 3</p></a>
+<a href="/seasons#table" (click)="click('4', 'Breaking Bad')"><img src="/assets/season 4.webp"/><p> Season 4</p></a>
+<a href="/seasons#table" (click)="click('5', 'Breaking Bad')"><img src="/assets/season 5.webp"/><p> Season 5</p></a>
+</div>
+<br>
+<p>Better Call Saul</p>
+<div class="posters">
+<a href="/seasons#table" (click)="click('1', 'Better Call Saul')"><img src="/assets/call1.webp"/><p> Season 1</p></a>
+<a href="/seasons#table" (click)="click('2', 'Better Call Saul')"><img src="/assets/call2.webp"/><p> Season 2</p></a>
+<a href="/seasons#table" (click)="click('3', 'Better Call Saul')"><img src="/assets/call4.jpg"/><p> Season 3</p></a>
+<a href="/seasons#table" (click)="click('4', 'Better Call Saul')"><img src="/assets/call4.webp"/><p> Season 4</p></a>
+</div>
+
+
+<div id="table" >
+    <table style="width:100%" >
+        <tr>
+          <th>Number</th>
+          <th>Title</th>
+          <th>Air Date</th>
+        </tr>
+        <ng-container *ngFor="let episode of episodes | async">
+        <tr *ngIf='episode.season === seasons && episode.series === series'  >
+          <td>{{episode.episode}}</td>
+          <td>{{episode.title}}</td>
+          <td>{{episode.air_date}}</td>
+        </tr>
+    </ng-container>
+    </table>
+</div>
+
+</div>

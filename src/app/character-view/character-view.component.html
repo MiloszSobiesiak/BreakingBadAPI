@@ -1,0 +1,21 @@
+
+<div class="main" *ngFor="let character of character | async">
+    <div class="photo">
+    <img [src]="character.img"/>
+    </div>
+    <div class="text">
+        <h1>{{character.name}}</h1>
+        <h2>{{character.nickname}}</h2>
+ 
+        <p>Birthday:</p>
+        <p class="blue">{{character.birthday}}</p>
+        <p>Status:</p>
+        <p class="blue">{{character.status}}</p>
+        <p>Ocupation:</p>
+        <p class="blue">{{character.occupation}}</p>
+        <p>Appearance:</p>
+        <p class="blue">{{character.appearance}}</p>
+        <p>Portrayed:</p>
+        <p class="blue">{{character.portrayed}}</p>
+    </div>
+</div>
