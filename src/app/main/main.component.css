@@ -21,7 +21,8 @@ h2{
     background-image: url('/assets/bgXD4.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 90vh;
+    
 
     /* mask-image: linear-gradient(to bottom, black 1%, black 99%); */
 }

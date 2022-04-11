@@ -6,6 +6,7 @@ import { map } from 'rxjs/operators';
 import { character } from 'src/app/models/character';
 import { tap } from 'rxjs';
 import { episodes } from 'src/app/models/episodes';
+import { quote } from 'src/app/models/quote';
 
 @Injectable({
   providedIn: 'root',
@@ -16,8 +17,7 @@ export class HttpService {
 private url= 'https://www.breakingbadapi.com/api/'
 
 getCharacters(): Observable<character[]>{
-    return this.httpClient.get<character[]>(this.url + 'characters').
-    pipe(tap(console.log))
+    return this.httpClient.get<character[]>(this.url + 'characters')
 }
 
 getCharacter(id:any): Observable<character[]>{
@@ -26,9 +26,13 @@ getCharacter(id:any): Observable<character[]>{
 }
 
 getEpisodes(): Observable<episodes[]>{
-  return this.httpClient.get<episodes[]>(this.url + 'episodes').
-  pipe(tap(console.log))
+  return this.httpClient.get<episodes[]>(this.url + 'episodes')
 }
+
+getRandom(): Observable<quote[]>{
+  return this.httpClient.get<quote[]>(this.url + 'quote/random')
+}
+
 
 
 }

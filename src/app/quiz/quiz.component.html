@@ -1,0 +1,9 @@
+<div class="main">
+<div *ngFor="let quote of quotes| async">
+   <span class="quote"> "{{quote.quote}}" </span>
+   <div *ngIf="czek(quote.author)"></div>
+   <input class="button" (click)="click(quote.author)" type="button" value="Add letter">
+</div>
+<input class="guess" type="text" [(ngModel)]="text"/>
+
+</div>

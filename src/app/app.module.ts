@@ -10,7 +10,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { CharacterViewComponent } from './character-view/character-view.component';
-import { SeasonsComponent } from './seasons/seasons.component'
+import { SeasonsComponent } from './seasons/seasons.component';
+import { QuizComponent } from './quiz/quiz.component'
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { SeasonsComponent } from './seasons/seasons.component'
     CharactersComponent,
     CharacterCoverComponent,
     CharacterViewComponent,
-    SeasonsComponent
+    SeasonsComponent,
+    QuizComponent
   ],
   imports: [
     BrowserModule, AppRoutingModule, HttpClientModule, FormsModule, Ng2SearchPipeModule

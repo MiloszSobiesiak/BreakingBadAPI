@@ -1,25 +1,57 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
-p{
-    color: white;
+.main{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    height: 100%;
+    gap: 0px 0px; 
+    width: 100%;
+  
+}
+.table{
+    grid-column: 2/3;
+    position: relative;
+    top: 7%;
+    left:5%;
+    font-size: 1.4rem;
     font-family: "Roboto", sans-serif;
-    font-size: 2rem;
-    
-}
-a{
-    cursor: pointer;
-    color: white;
-}
-img{ 
-    width: 230px;
-    height: 340px;
-}
-.posters{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: start;
-    gap:150px;
-}
-table{
     color: white;
     text-align: left; 
+    border-collapse:collapse
+
+    
+}
+table th{
+    color:rgb(58, 153, 241);
+    font-size: 1.8rem;
+    margin-bottom: 100px;
+}
+tr.border_bottom {
+    border-bottom: 1px solid white;
+  }
+img{ 
+    width: 290px;
+    height: 390px;
+    border-radius: 5%;
+}
+.poster {
+    position: relative;
+    grid-column: 1/2;
+    justify-self: center;
+    top: 5%;
+    color: white;
+    
+}
+.change img{
+    margin: 5px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    
+}
+
+.change{
+    grid-column: 1/2;
+    font-size: 1.2rem;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
 }
